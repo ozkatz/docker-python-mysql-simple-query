@@ -15,7 +15,7 @@ def hello():
     results = db.store_result()
     row = results.fetch_row(how=1)[0]
 
-    return "<h1>Hey {} {}, you're {} old!</h1>".format(row['first_name'], row['last_name'], row['age'])
+    return "<h1>Hey {} {} - You're {} years old!</h1>".format(row['first_name'], row['last_name'], row['age'])
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
