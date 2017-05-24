@@ -4,7 +4,7 @@ We've prepared a small script running in container which tries to query a databa
 You're work is to launch a mysql-database, create a database (you can pick the name), create a table named `employees` with the structure detailed below.
 Insert a row filling all the columns with what ever you want, the only thing you must do is set id = 1.
 
-Once you've done this you'll need to build an image from the Dockerfile we've prepared for you and run it while providing the relevant environment variables to your mysql database and exposing the web interface port (5000) to some external port.
+Once you've done this you'll need to build an image from the Dockerfile we've prepared for you and run it in the background while providing the relevant environment variables to your mysql database and exposing the web interface port (5000) to some external port.
 The available environment variables to use are listed below.
 
 If you've managed to do this successfully you shoudl be able to browse your docker-machine ip with the external port and get a nice hello message.
